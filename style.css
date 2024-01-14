@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+:root {
+  --rtc-color-lila: #00c424;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--rtc-primary-font);
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  font-family: 'Rubik', sans-serif;
+}
+.body {
+  display: flex;
+  height: 80vh;
+  background-color: rgb(21, 21, 21);
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-color: #000000;
+}
+.footer > p {
+  font-family: 'Neonderthaw', cursive;
+  font-size: 20px;
+  cursor: pointer;
+  color: #dddddd;
+}
+.footer > p:hover {
+  transform: scale(1, 1.1);
+  text-shadow: 0 0 5px var(--rtc-color-lila), 0 0 10px var(--rtc-color-lila),
+    0 0 40px var(--rtc-color-lila), 0 0 60px var(--rtc-color-lila);
+}

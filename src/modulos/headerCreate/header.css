@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+:root {
+  --rtc-color-white: #ff4646;
+  --rtc-color-black: #000000;
+  --rtc-color-yellow: #dbdb26;
+  --rtc-color-violet: #cb11dc;
+  --rtc-color-blue: #2700eb;
+  --rtc-color-orange: #eea300;
+}
+.headerContent {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+  height: 15vh;
+}
+.indexDiv {
+  display: flex;
+  gap: 50px;
+}
+.userDiv > p {
+  color: #dddddd;
+  font-size: 40px;
+  cursor: pointer;
+  font-family: 'Neonderthaw', cursive;
+  letter-spacing: 6px;
+}
+.userDiv > p:first-child:hover {
+  text-shadow: 0 0 5px var(--rtc-color-yellow), 0 0 10px var(--rtc-color-yellow),
+    0 0 40px var(--rtc-color-yellow), 0 0 60px var(--rtc-color-yellow);
+}
+.userDiv > p:hover {
+  transform: scale(1, 1.1);
+  text-shadow: 0 0 5px var(--rtc-color-white), 0 0 10px var(--rtc-color-white),
+    0 0 40px var(--rtc-color-white), 0 0 60px var(--rtc-color-white);
+}
+.indexDiv > li {
+  color: #dddddd;
+  font-size: 35px;
+  cursor: pointer;
+  font-family: 'Neonderthaw', cursive;
+}
+.indexDiv > li:first-child:hover {
+  transform: scale(1, 1.1);
+  text-shadow: 0 0 5px var(--rtc-color-violet), 0 0 10px var(--rtc-color-violet),
+    0 0 40px var(--rtc-color-violet), 0 0 60px var(--rtc-color-violet);
+}
+.indexDiv > li:nth-child(2):hover {
+  transform: scale(1, 1.1);
+  text-shadow: 0 0 5px var(--rtc-color-blue), 0 0 10px var(--rtc-color-blue),
+    0 0 40px var(--rtc-color-blue), 0 0 60px var(--rtc-color-blue);
+}
+.indexDiv > li:nth-child(3):hover {
+  transform: scale(1, 1.1);
+  text-shadow: 0 0 5px var(--rtc-color-orange), 0 0 10px var(--rtc-color-orange),
+    0 0 40px var(--rtc-color-orange), 0 0 60px var(--rtc-color-orange);
+}
+/*--------------------------
+
+/* ... (tus estilos existentes) */
+
+.aboutMeSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333; /* Ajusta el color de fondo según tus preferencias */
+}
+
+.userImg {
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  border-radius: 50%; /* Añade un borde redondeado a la imagen */
+  transition: margin-left 0.5s ease; /* Añade una transición para el efecto de desplazamiento */
+}
+
+.userImg:hover {
+  margin-left: -20px; /* Ajusta la cantidad de desplazamiento hacia la izquierda */
+}
+
+.description {
+  margin-left: 20px; /* Ajusta la distancia entre la imagen y el texto */
+  font-size: 18px; /* Ajusta el tamaño del texto según tus necesidades */
+  opacity: 0; /* Inicialmente oculta la descripción */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Añade transiciones para el efecto de aparición y desplazamiento */
+  transform: translateX(20px); /* Desplaza la descripción hacia la derecha inicialmente */
+}
+
+.userImg:hover + .description {
+  opacity: 1; /* Muestra la descripción al hacer hover sobre la imagen */
+  transform: translateX(0); /* Desplaza la descripción hacia la izquierda al hacer hover */
+}
+
+/* ... (tus estilos existentes) */
