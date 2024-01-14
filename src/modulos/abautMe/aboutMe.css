@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.aboutMeSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0b0a0a;
+}
+
+.userImg {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  transition: margin-left 0.5s ease; /* Añade una transición para el efecto de desplazamiento */
+}
+
+.userImg:hover {
+  margin-left: -10%; /* Ajusta la cantidad de desplazamiento hacia la izquierda */
+}
+
+.description {
+  color: rgb(200, 200, 200);
+  font-family: 'Dancing Script', cursive;
+  width: 40%;
+  margin-left: 20px; /* Ajusta la distancia entre la imagen y el texto */
+  font-size: 18px; /* Ajusta el tamaño del texto según tus necesidades */
+  opacity: 0; /* Inicialmente oculta la descripción */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Añade transiciones para el efecto de aparición y desplazamiento */
+  transform: translateX(20px); /* Desplaza la descripción hacia la derecha inicialmente */
+}
+
+.userImg:hover + .description {
+  opacity: 1; /* Muestra la descripción al hacer hover sobre la imagen */
+  transform: translateX(0); /* Desplaza la descripción hacia la izquierda al hacer hover */
+}

@@ -1,6 +1,6 @@
-import { headerCreate } from './src/modulos/headerCreate/header'
-
 import './style.css'
+import { headerCreate } from './src/modulos/header/header'
+import { createAboutMeContent } from './src/modulos/abautMe/aboutMe'
 
 const appHtml = document.querySelector('#app')
 

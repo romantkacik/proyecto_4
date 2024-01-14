@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+:root {
+  --rtc-color-red: #ff4646;
+  --rtc-color-black: #000000;
+  --rtc-color-yellow: #dbdb26;
+  --rtc-color-violet: #cb11dc;
+  --rtc-color-blue: #2700eb;
+  --rtc-color-orange: #eea300;
+  --rtc-color-aqua: #14f4e5;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+  height: 15vh;
+}
+.indexDiv {
+  display: flex;
+  gap: 50px;
+}
+.userDiv > p {
+  color: #dddddd;
+  font-size: 40px;
+  cursor: pointer;
+  font-family: 'Neonderthaw', cursive;
+  letter-spacing: 6px;
+}
+
+.userDiv:hover {
+  transform: scale(1.02, 1.02);
+  text-shadow: 0 0 5px var(--rtc-color-red), 0 0 10px var(--rtc-color-red),
+    0 0 40px var(--rtc-color-red), 0 0 60px var(--rtc-color-red);
+}
+.indexDiv > li {
+  color: #dddddd;
+  font-size: 35px;
+  cursor: pointer;
+  font-family: 'Neonderthaw', cursive;
+}
+.indexDiv > li:first-child:hover {
+  transform: scale(1.02, 1.02);
+  text-shadow: 0 0 5px var(--rtc-color-violet), 0 0 10px var(--rtc-color-violet),
+    0 0 40px var(--rtc-color-violet), 0 0 60px var(--rtc-color-violet);
+}
+.indexDiv > li:nth-child(2):hover {
+  transform: scale(1.02, 1.02);
+  text-shadow: 0 0 5px var(--rtc-color-blue), 0 0 10px var(--rtc-color-blue),
+    0 0 40px var(--rtc-color-blue), 0 0 60px var(--rtc-color-blue);
+}
+.indexDiv > li:nth-child(3):hover {
+  transform: scale(1.02, 1.02);
+  text-shadow: 0 0 5px var(--rtc-color-orange), 0 0 10px var(--rtc-color-orange),
+    0 0 40px var(--rtc-color-orange), 0 0 60px var(--rtc-color-orange);
+}
+.indexDiv > li:nth-child(4):hover {
+  transform: scale(1.02, 1.02);
+  text-shadow: 0 0 5px var(--rtc-color-aqua), 0 0 10px var(--rtc-color-aqua),
+    0 0 40px var(--rtc-color-aqua), 0 0 60px var(--rtc-color-aqua);
+}
