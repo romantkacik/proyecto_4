@@ -36,28 +36,28 @@
   text-shadow: 0 0 5px var(--rtc-color-red), 0 0 10px var(--rtc-color-red),
     0 0 40px var(--rtc-color-red), 0 0 60px var(--rtc-color-red);
 }
-.indexDiv > li {
+.indexDiv > li > a {
   color: #dddddd;
   font-size: 35px;
   cursor: pointer;
   font-family: 'Neonderthaw', cursive;
 }
-.indexDiv > li:first-child:hover {
+.indexDiv > li > a:first-child:hover {
   transform: scale(1.02, 1.02);
   text-shadow: 0 0 5px var(--rtc-color-violet), 0 0 10px var(--rtc-color-violet),
     0 0 40px var(--rtc-color-violet), 0 0 60px var(--rtc-color-violet);
 }
-.indexDiv > li:nth-child(2):hover {
+.indexDiv > li > a:nth-child(2):hover {
   transform: scale(1.02, 1.02);
   text-shadow: 0 0 5px var(--rtc-color-blue), 0 0 10px var(--rtc-color-blue),
     0 0 40px var(--rtc-color-blue), 0 0 60px var(--rtc-color-blue);
 }
-.indexDiv > li:nth-child(3):hover {
+.indexDiv > li > a:nth-child(3):hover {
   transform: scale(1.02, 1.02);
   text-shadow: 0 0 5px var(--rtc-color-orange), 0 0 10px var(--rtc-color-orange),
     0 0 40px var(--rtc-color-orange), 0 0 60px var(--rtc-color-orange);
 }
-.indexDiv > li:nth-child(4):hover {
+.indexDiv > li > a:nth-child(4):hover {
   transform: scale(1.02, 1.02);
   text-shadow: 0 0 5px var(--rtc-color-aqua), 0 0 10px var(--rtc-color-aqua),
     0 0 40px var(--rtc-color-aqua), 0 0 60px var(--rtc-color-aqua);

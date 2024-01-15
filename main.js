@@ -1,6 +1,6 @@
 import './style.css'
 import { headerCreate } from './src/modulos/header/header'
-import { createAboutMeContent } from './src/modulos/abautMe/aboutMe'
+import { showHome } from './src/modulos/home/home'
 
 const appHtml = document.querySelector('#app')
 
@@ -26,3 +26,6 @@ const footertext = document.createElement('p')
 footertext.className = 'footerText'
 footertext.textContent = '©️ Created by Román Tkacik'
 footerContainer.appendChild(footertext)
+
+// Llama a showHome al cargar la página
+showHome()
