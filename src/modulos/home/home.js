@@ -36,6 +36,6 @@ export const showHome = () => {
     }, 2000)
   }
 
-  // Inicia la transición de fotos
   showNextPhoto()
+  return photoContainer
 }

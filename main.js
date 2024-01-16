@@ -1,6 +1,9 @@
+//main.js
+
 import './style.css'
-import { headerCreate } from './src/modulos/header/header'
+import { headerCreate, linkExpAboutMe, linkExpHome } from './src/modulos/header/header'
 import { showHome } from './src/modulos/home/home'
+import { showAboutMe } from './src/modulos/abautMe/aboutMe'
 
 const appHtml = document.querySelector('#app')
 
@@ -21,6 +24,22 @@ appHtml.appendChild(footerContainer)
 
 const headerContent = headerCreate()
 headerContainer.appendChild(headerContent)
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Tu código actual
+  const homeLink = document.querySelector('.homeLink')
+  homeLink.addEventListener('click', () => {
+    const homeContent = showHome()
+    bodyContainer.innerHTML = ''
+    bodyContainer.appendChild(homeContent)
+  })
+  const aboutMeLink = document.querySelector('.aboutMeLink')
+  aboutMeLink.addEventListener('click', () => {
+    const homeContent = showAboutMe()
+    bodyContainer.innerHTML = ''
+    bodyContainer.appendChild(homeContent)
+  })
+})
 
 const footertext = document.createElement('p')
 footertext.className = 'footerText'

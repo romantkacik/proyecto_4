@@ -1,8 +1,9 @@
 //! header.js
 import './header.css'
 import { bodyContainer } from '../../../main'
-import { showHome } from '../home/home'
-import { showAboutMe } from '../aboutMe/aboutMe'
+
+export const linkExpHome = document.querySelector('homeLink')
+export const linkExpAboutMe = document.querySelector('aboutMeLink')
 
 export const headerCreate = () => {
   bodyContainer.innerHTML = ''
@@ -27,29 +28,29 @@ export const headerCreate = () => {
   index1.className = 'home'
   index1.textContent = 'Home'
   const homeLink = document.createElement('a')
+  homeLink.classList.add('homeLink')
   homeLink.textContent = 'Home'
-  homeLink.href = '#'
   index1.appendChild(homeLink)
 
   const index2 = document.createElement('li')
   index2.className = 'aboutMe'
   const aboutMeLink = document.createElement('a')
+  aboutMeLink.classList.add('aboutMeLink')
   aboutMeLink.textContent = 'About me'
-  aboutMeLink.href = '#'
   index2.appendChild(aboutMeLink)
 
   const index3 = document.createElement('li')
   index3.className = 'experience'
   const experienceLink = document.createElement('a')
+  experienceLink.classList.add('experienceLink')
   experienceLink.textContent = 'Experience'
-  experienceLink.href = '#'
   index3.appendChild(experienceLink)
 
   const index4 = document.createElement('li')
   index4.className = 'info'
   const infoLink = document.createElement('a')
+  infoLink.classList.add('infoLink')
   infoLink.textContent = 'Info'
-  infoLink.href = '#'
   index4.appendChild(infoLink)
 
   indexDiv.appendChild(index1)
@@ -60,15 +61,5 @@ export const headerCreate = () => {
 
   headerContent.appendChild(indexDiv)
 
-  aboutMeLink.addEventListener('click', () => {
-    const aboutMeContent = showAboutMe()
-    bodyContainer.innerHTML = ''
-    bodyContainer.appendChild(aboutMeContent)
-  })
-  homeLink.addEventListener('click', () => {
-    const homeContent = showHome()
-    bodyContainer.innerHTML = ''
-    bodyContainer.appendChild(homeContent)
-  })
   return headerContent
 }
