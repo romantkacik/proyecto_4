@@ -26,16 +26,14 @@ export const showHome = () => {
   const showNextPhoto = () => {
     const currentPhoto = photos[currentPhotoIndex]
     imgElement.src = currentPhoto
-    imgElement.classList.add('fade-in')
 
-    // Incrementa el índice de la foto actual
     currentPhotoIndex = (currentPhotoIndex + 1) % photos.length
 
-    // Establece un temporizador para mostrar la siguiente foto después de 3 segundos
     setTimeout(() => {
-      imgElement.classList.remove('fade-in')
-      showNextPhoto()
-    }, 5000)
+      setTimeout(() => {
+        showNextPhoto()
+      }, 2000)
+    }, 2000)
   }
 
   // Inicia la transición de fotos
