@@ -1,0 +1,24 @@
+/* info.css */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  width: 100%;
+}
+
+.social-links a {
+  margin: 0 20px; /* Ajusta el espacio entre los enlaces */
+}
+
+.social-links img {
+  width: 40px; /* Ajusta el tamaño de los íconos según sea necesario */
+  height: 40px;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+  transform: scale(1.2); /* Ajusta la escala al hacer hover */
+}

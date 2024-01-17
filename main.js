@@ -5,6 +5,7 @@ import { headerCreate } from './src/modulos/header/header'
 import { showHome } from './src/modulos/home/home'
 import { showAboutMe } from './src/modulos/abautMe/aboutMe'
 import { showWork } from './src/modulos/work/work'
+import { showInfo } from './src/modulos/info/info'
 
 const appHtml = document.querySelector('#app')
 
@@ -45,6 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const workContent = showWork()
     bodyContainer.innerHTML = ''
     bodyContainer.appendChild(workContent)
+  })
+  const infoLink = document.querySelector('.infoLink')
+  infoLink.addEventListener('click', () => {
+    const infoContent = showInfo()
+    bodyContainer.innerHTML = ''
+    bodyContainer.appendChild(infoContent)
   })
 })
 

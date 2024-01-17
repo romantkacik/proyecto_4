@@ -13,7 +13,7 @@
   width: 300px;
   height: auto;
   border-radius: 50%;
-  transition: margin-left 0.5s ease; /* Añade una transición para el efecto de desplazamiento */
+  transition: margin-left 0.5s ease;
 }
 
 .userImg:hover {
@@ -24,14 +24,15 @@
   color: #c8c8c8;
   font-family: 'Dancing Script', cursive;
   width: 40%;
-  margin-left: 20px;
-  font-size: 28px;
+  margin-left: 120px;
+  font-size: 30px;
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
   transform: translateX(20px);
 }
 
 .userImg:hover + .description {
-  opacity: 1; /* Muestra la descripción al hacer hover sobre la imagen */
-  transform: translateX(0); /* Desplaza la descripción hacia la izquierda al hacer hover */
+  opacity: 1;
+  transform: translateX(0);
+  display: flex;
 }
