@@ -30,6 +30,7 @@ const arrayPola = [
   './pola/pola-5.jpg',
   './pola/pola-6.jpg',
   './pola/pola-7.jpg',
+  './pola/pola-8.jpg',
 ]
 const arrayShoot = [
   './shoot/shoot-1.jpg',
@@ -43,7 +44,6 @@ const arrayShoot = [
   './shoot/shoot-9.jpg',
   './shoot/shoot-10.jpg',
   './shoot/shoot-11.jpg',
-  './shoot/shoot-12.jpg',
 ]
 
 export const showWork = () => {
@@ -51,9 +51,9 @@ export const showWork = () => {
   worksSection.classList.add('works-section')
 
   const galleryFolders = [
-    { name: 'Work', images: arrayTrip },
-    { name: 'Shootings', images: arrayPola },
-    { name: 'Trips', images: arrayShoot },
+    { name: 'Trips', images: arrayTrip },
+    { name: 'Polaroid', images: arrayPola },
+    { name: 'Shootings', images: arrayShoot },
   ]
 
   for (const folder of galleryFolders) {

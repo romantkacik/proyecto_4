@@ -7,16 +7,17 @@
   overflow-x: auto;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  margin: auto;
 }
 
 .gallery-container {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  height: 30%;
+  height: 33%;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .gallery {
@@ -24,6 +25,7 @@
   padding: 10px;
   display: flex;
   width: 100%;
+  z-index: 1;
 }
 .gallery > img {
   height: 100%;
@@ -32,6 +34,11 @@
   margin-right: 10px;
   border: none;
   border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.gallery > img:hover {
+  transform: scale(1.05);
+  z-index: 2;
 }
 .gallery::-webkit-scrollbar {
   display: none;
