@@ -32,8 +32,8 @@ export const showHome = () => {
     setTimeout(() => {
       setTimeout(() => {
         showNextPhoto()
-      }, 2000)
-    }, 2000)
+      }, 3000)
+    }, 3000)
   }
 
   showNextPhoto()
