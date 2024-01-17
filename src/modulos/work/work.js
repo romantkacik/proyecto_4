@@ -50,20 +50,32 @@ export const showWork = () => {
   const worksSection = document.createElement('section')
   worksSection.classList.add('works-section')
 
-  const galleryFolders = [arrayTrip, arrayPola, arrayShoot]
+  const galleryFolders = [
+    { name: 'Work', images: arrayTrip },
+    { name: 'Shootings', images: arrayPola },
+    { name: 'Trips', images: arrayShoot },
+  ]
 
   for (const folder of galleryFolders) {
+    const galleryContainer = document.createElement('div')
+    galleryContainer.classList.add('gallery-container')
+
     const galleryDiv = document.createElement('div')
     galleryDiv.classList.add('gallery')
 
-    for (let i = 0; i < folder.length; i++) {
+    for (let i = 0; i < folder.images.length; i++) {
       const imgElement = document.createElement('img')
-      imgElement.src = `/public/${folder[i]}`
-      imgElement.alt = `${folder[i]} Image ${i + 1}`
+      imgElement.src = folder.images[i]
+      imgElement.alt = `${folder.images[i]} Image ${i + 1}`
       galleryDiv.appendChild(imgElement)
     }
+    // Agregar el nombre del folder como un encabezado h1
+    const folderName = document.createElement('h1')
+    folderName.textContent = folder.name
+    galleryContainer.appendChild(folderName)
 
-    worksSection.appendChild(galleryDiv)
+    galleryContainer.appendChild(galleryDiv)
+    worksSection.appendChild(galleryContainer)
   }
 
   return worksSection

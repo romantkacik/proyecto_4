@@ -1,12 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 .works-section {
   display: flex;
   flex-direction: column;
   columns: 3;
-}
-.gallery {
+  overflow-x: auto;
+  justify-content: center;
+  height: 100%;
   width: 100%;
+}
+
+.gallery-container {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
   height: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  overflow-x: auto;
+  padding: 10px;
+  display: flex;
+  width: 100%;
 }
 .gallery > img {
-  width: fit-content;
+  height: 100%;
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-container h1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: 'Dancing Script', cursive;
 }
