@@ -42,22 +42,22 @@
   cursor: pointer;
   font-family: 'Neonderthaw', cursive;
 }
-.indexDiv > li > a:first-child:hover {
+.homeLink:hover {
   transform: scale(1.02, 1.02);
   text-shadow: 0 0 5px var(--rtc-color-violet), 0 0 10px var(--rtc-color-violet),
     0 0 40px var(--rtc-color-violet), 0 0 60px var(--rtc-color-violet);
 }
-.indexDiv > li > a:nth-child(2):hover {
+.aboutMeLink:hover {
   transform: scale(1.02, 1.02);
   text-shadow: 0 0 5px var(--rtc-color-blue), 0 0 10px var(--rtc-color-blue),
     0 0 40px var(--rtc-color-blue), 0 0 60px var(--rtc-color-blue);
 }
-.indexDiv > li > a:nth-child(3):hover {
+.workLink:hover {
   transform: scale(1.02, 1.02);
   text-shadow: 0 0 5px var(--rtc-color-orange), 0 0 10px var(--rtc-color-orange),
     0 0 40px var(--rtc-color-orange), 0 0 60px var(--rtc-color-orange);
 }
-.indexDiv > li > a:nth-child(4):hover {
+.infoLink:hover {
   transform: scale(1.02, 1.02);
   text-shadow: 0 0 5px var(--rtc-color-aqua), 0 0 10px var(--rtc-color-aqua),
     0 0 40px var(--rtc-color-aqua), 0 0 60px var(--rtc-color-aqua);

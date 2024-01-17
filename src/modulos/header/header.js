@@ -2,9 +2,6 @@
 import './header.css'
 import { bodyContainer } from '../../../main'
 
-export const linkExpHome = document.querySelector('homeLink')
-export const linkExpAboutMe = document.querySelector('aboutMeLink')
-
 export const headerCreate = () => {
   bodyContainer.innerHTML = ''
   const headerContent = document.createElement('nav')
@@ -40,11 +37,11 @@ export const headerCreate = () => {
   index2.appendChild(aboutMeLink)
 
   const index3 = document.createElement('li')
-  index3.className = 'experience'
-  const experienceLink = document.createElement('a')
-  experienceLink.classList.add('experienceLink')
-  experienceLink.textContent = 'Experience'
-  index3.appendChild(experienceLink)
+  index3.className = 'work'
+  const workLink = document.createElement('a')
+  workLink.classList.add('workLink')
+  workLink.textContent = 'Work'
+  index3.appendChild(workLink)
 
   const index4 = document.createElement('li')
   index4.className = 'info'

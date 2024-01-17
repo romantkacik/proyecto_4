@@ -1,0 +1,12 @@
+.works-section {
+  display: flex;
+  flex-direction: column;
+  columns: 3;
+}
+.gallery {
+  width: 100%;
+  height: 30%;
+}
+.gallery > img {
+  width: fit-content;
+}

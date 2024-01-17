@@ -1,9 +1,10 @@
 //main.js
 
 import './style.css'
-import { headerCreate, linkExpAboutMe, linkExpHome } from './src/modulos/header/header'
+import { headerCreate } from './src/modulos/header/header'
 import { showHome } from './src/modulos/home/home'
 import { showAboutMe } from './src/modulos/abautMe/aboutMe'
+import { showWork } from './src/modulos/work/work'
 
 const appHtml = document.querySelector('#app')
 
@@ -38,6 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const homeContent = showAboutMe()
     bodyContainer.innerHTML = ''
     bodyContainer.appendChild(homeContent)
+  })
+  const workLink = document.querySelector('.workLink')
+  workLink.addEventListener('click', () => {
+    const workContent = showWork()
+    bodyContainer.innerHTML = ''
+    bodyContainer.appendChild(workContent)
   })
 })
 
