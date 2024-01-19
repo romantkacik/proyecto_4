@@ -19,7 +19,7 @@ export const showInfo = () => {
     socialLink.target = '_blank'
 
     const socialIcon = document.createElement('img')
-    socialIcon.src = socialMedia.src // Corrige el nombre de la propiedad 'icon' a 'src'
+    socialIcon.src = socialMedia.src
     socialIcon.alt = `${socialMedia.name} Icon`
 
     socialLink.appendChild(socialIcon)
