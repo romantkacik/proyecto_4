@@ -23,7 +23,6 @@ export const headerCreate = () => {
 
   const index1 = document.createElement('li')
   index1.className = 'home'
-  index1.textContent = 'Home'
   const homeLink = document.createElement('a')
   homeLink.classList.add('homeLink')
   homeLink.textContent = 'Home'
