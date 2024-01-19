@@ -8,6 +8,7 @@
   --rtc-color-blue: #2700eb;
   --rtc-color-orange: #eea300;
   --rtc-color-aqua: #14f4e5;
+  --rtc-color-user: #14f466;
 }
 
 .headerContent {
@@ -61,4 +62,41 @@
   transform: scale(1.02, 1.02);
   text-shadow: 0 0 5px var(--rtc-color-aqua), 0 0 10px var(--rtc-color-aqua),
     0 0 40px var(--rtc-color-aqua), 0 0 60px var(--rtc-color-aqua);
+}
+
+@media screen and (max-width: 1000px) {
+  .userDiv > p {
+    font-size: 30px;
+  }
+  .indexDiv > li > a {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .userDiv > p {
+    display: none;
+  }
+  .indexDiv > li > a {
+    font-size: 25px;
+  }
+  .indexDiv {
+    padding-right: 40px;
+  }
+
+  .headerContent {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+@media screen and (min-width: 340px) and (max-width: 510px) {
+  .indexDiv > li > a {
+    font-size: 20px;
+  }
+  .indexDiv {
+    display: flex;
+    gap: 10px;
+  }
 }
